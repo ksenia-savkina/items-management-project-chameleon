@@ -1,2 +1,13 @@
-# Project exclude paths
-/target/
+target/
+!.mvn/wrapper/maven-wrapper.jar
+!**/src/main/**/target/
+!**/src/test/**/target/
+
+.idea
+.allure
+*.iws
+*.iml
+*.ipr
+*.war
+*.jar
+*.log
