@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Templates xmlns="http://chameleon.ibs-qa.ru/schema/templates">
+    <Template name="Link" locator=".//a[normalize-space()='%1$s']"/>
+</Templates>

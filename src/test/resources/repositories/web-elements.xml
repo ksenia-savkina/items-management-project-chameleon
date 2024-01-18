@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Pages xmlns="http://chameleon.ibs-qa.ru/schema/web-elements">
+    <Page name="Меню">
+        <Link name="Песочница"/>
+        <Link name="Товары"/>
+        <Link name="Сброс данных"/>
+    </Page>
+    <Page name="Главная страница">
+        <Block name="Меню"/>
+        <StaticText name="QualIT" locator="//a[.='QualIT']" isLoaded="true"/>
+    </Page>
+    <Page name="Список товаров">
+        <Block name="Меню"/>
+        <StaticText name="Заголовок" locator="//h5" isLoaded="true"/>
+        <Collection name="Таблица" locator=".//table/tbody/tr">
+            <StaticText name="#" locator=".//th[1]"/>
+            <StaticText name="Наименование" locator=".//td[1]"/>
+            <StaticText name="Тип" locator=".//td[2]"/>
+            <StaticText name="Экзотический" locator=".//td[3]"/>
+        </Collection>
+        <Button name="Добавить" locator=".//button[.='Добавить']"/>
+        <StaticText name="QualIT" locator="//a[.='QualIT']"/>
+    </Page>
+    <Page name="Добавление товара">
+        <StaticText name="Заголовок" locator="//*[@id='editModal']//h5[@id='editModalLabel']" isLoaded="true"/>
+        <StaticText name="Наименование" locator=".//label[@for='name']"/>
+        <StaticText name="Тип" locator=".//label[@for='type']"/>
+        <StaticText name="Экзотический" locator=".//label[@for='exotic']"/>
+        <TextInput name="Поле Наименование" locator=".//input[@id='name']"/>
+        <ComboBox name="Комбинированный список Тип" locator=".//select[@id='type']"/>
+        <CheckBox name="Чекбокс Экзотический" locator=".//input[@id='exotic']"/>
+        <Button name="Сохранить" locator=".//button[@id='save']"/>
+        <Button name="Закрыть" locator=".//button[@class='close']"/>
+    </Page>
+</Pages>
